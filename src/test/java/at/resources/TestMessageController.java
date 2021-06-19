@@ -3,7 +3,7 @@ package at.resources;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
-public class MessageController {
+public class TestMessageController {
 
     @Test
     public void test_setMessage_ReturnCheck() {
