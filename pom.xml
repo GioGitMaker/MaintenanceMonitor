@@ -13,7 +13,7 @@
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <testSourceDirectory>src/main/test/java/at/resources</testSourceDirectory>
+        <testSourceDirectory>src/test/java/at/resources</testSourceDirectory>
     </properties>
 
     <build>
@@ -66,14 +66,8 @@
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
+            <artifactId>junit-jupiter</artifactId>
             <version>5.8.0-M1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-surefire-provider</artifactId>
-            <version>1.0.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
