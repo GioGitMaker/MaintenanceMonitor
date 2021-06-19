@@ -17,4 +17,6 @@ public class StaticController {
         InputStream resource =getClass().getClassLoader().getResourceAsStream("MaintenanceMode.html");
         return resource;
     }
+
+    //Test
 }
