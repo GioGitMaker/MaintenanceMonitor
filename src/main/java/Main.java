@@ -1,7 +1,13 @@
+import com.sun.net.httpserver.HttpServer;
+import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
+import org.glassfish.jersey.server.ResourceConfig;
+
+import java.io.IOException;
+
 public class Main {
 
     public static void main(String[] args){
-<<<<<<< Updated upstream
+
         System.out.println("Starting REST Service...");
         ResourceConfig rc = new ResourceConfig().packages("at.resources");
         HttpServer server = JdkHttpServerFactory.createHttpServer(URI.create("http://localhost:8080/"), rc);
@@ -15,9 +21,5 @@ public class Main {
         }
         server.stop(0);
         System.out.println("Server stopped");
-    }
-=======
-
->>>>>>> Stashed changes
     }
 }
