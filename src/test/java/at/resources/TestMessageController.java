@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 public class TestMessageController {
 
     @Test
-    public void test_setMessage_ReturnCheck() {
+    public void Test_setMessage_ReturnCheck() {
         at.resources.MessageController messageController = new at.resources.MessageController();
 
         String curValue = messageController.setMessage("Test");
@@ -15,7 +15,7 @@ public class TestMessageController {
     }
 
     @Test
-    public void test_setMessage_StaticMessageCheck() {
+    public void Test_setMessage_StaticMessageCheck() {
         at.resources.MessageController messageController = new at.resources.MessageController();
 
         String curValue = messageController.setMessage("Test");
@@ -24,7 +24,7 @@ public class TestMessageController {
     }
 
     @Test
-    public void test_setMessage_StaticMessageCheckEmpty() {
+    public void Test_setMessage_StaticMessageCheckEmpty() {
         at.resources.MessageController messageController = new at.resources.MessageController();
 
         String curValue = messageController.setMessage("");
@@ -33,7 +33,7 @@ public class TestMessageController {
     }
 
     @Test
-    public void test_resetMessage_StaticMessageCheck() {
+    public void Test_resetMessage_StaticMessageCheck() {
         at.resources.MessageController messageController = new at.resources.MessageController();
 
         String curValue = messageController.setMessage("Test");
@@ -43,7 +43,7 @@ public class TestMessageController {
         Assertions.assertEquals("-", at.resources.MessageController.message);
     }
     @Test
-    public void test_getMessage_StaticMessageCheckWithoutChange() {
+    public void Test_getMessage_StaticMessageCheckWithoutChange() {
         at.resources.MessageController messageController = new at.resources.MessageController();
 
         String value = messageController.getMessage();
@@ -51,7 +51,7 @@ public class TestMessageController {
         Assertions.assertEquals(value, at.resources.MessageController.message);
     }
     @Test
-    public void test_getMessage_StaticMessageCheckWithChange() {
+    public void Test_getMessage_StaticMessageCheckWithChange() {
         at.resources.MessageController messageController = new at.resources.MessageController();
 
         String curValue = messageController.setMessage("Test");
