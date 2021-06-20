@@ -20,7 +20,7 @@ public class MessageControllerTest {
 
         String curValue = messageController.setMessage("Test");
 
-        Assertions.assertEquals("Tes", at.resources.MessageController.message);
+        Assertions.assertEquals("Test", at.resources.MessageController.message);
     }
 
     @Test
