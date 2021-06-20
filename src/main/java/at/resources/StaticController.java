@@ -11,6 +11,8 @@ import java.io.InputStream;
 
 public class StaticController {
 
+    //Taken from: //https://stackoverflow.com/questions/8642920/how-to-serve-static-content-with-jax-rs/8643120#8643120
+
     @GET
     @Produces(MediaType.TEXT_HTML)
     public InputStream getMessage() throws Exception{
